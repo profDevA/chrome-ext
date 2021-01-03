@@ -1,0 +1,388 @@
+{
+  "testing": false,
+  "checkboxes": [
+    {
+      "regex_pattern": "(order)?.*terms|consent.*(checkbox)?|Terms And Conditions|agree",
+      "attributes": [
+        "name",
+        "data-auto-id"
+      ]
+    }
+  ],
+  "autofills": {
+    "title": [
+      {
+        "regex_pattern": "^honorific-prefix$",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "salutation|address.title",
+        "attributes": [
+          "name",
+          "id"
+        ]
+      }
+    ],
+    "fullName": [
+      {
+        "regex_pattern": "^name$",
+        "attributes": [
+          "autocomplete"
+        ]
+      }
+    ],
+    "firstName": [
+      {
+        "regex_pattern": "given-name",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "first.*name|initials|fname|first$|given.*name|^firstname$|^fname$",
+        "attributes": [
+          "name"
+        ]
+      }
+    ],
+    "lastName": [
+      {
+        "regex_pattern": "family-name",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "last.*name|lname|surname|last$|secondname|family.*name",
+        "attributes": [
+          "name"
+        ]
+      }
+    ],
+    "address": [
+      {
+        "regex_pattern": "address-line1",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "^address$|address[_-]?line(1|one)|address1|addr1|street",
+        "attributes": [
+          "name"
+        ]
+      }
+    ],
+    "address2": [
+      {
+        "regex_pattern": "address-line2",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "address[_-]?line(2|two)|address.?2|addr2|street.?(?:#|no|num|nr)|suite|uni",
+        "attributes": [
+          "name"
+        ]
+      }
+    ],
+    "city": [
+      {
+        "regex_pattern": "address-level2",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "city|town",
+        "attributes": [
+          "name",
+          "autocomplete"
+        ]
+      }
+    ],
+    "state": [
+      {
+        "regex_pattern": "address-level1",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "(?<!(united|hist|history).?)state|county|region|province",
+        "attributes": [
+          "name"
+        ]
+      }
+    ],
+    "countryCode": [
+      {
+        "regex_pattern": "^country$",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "countrycode",
+        "attributes": [
+          "name"
+        ]
+      }
+    ],
+    "country": [
+      {
+        "regex_pattern": "^country-name$",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "country|countries",
+        "attributes": [
+          "name"
+        ]
+      }
+    ],
+    "zipcode": [
+      {
+        "regex_pattern": "postal-code",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "zip|postal|post.*code|pcode",
+        "attributes": [
+          "name",
+          "id"
+        ]
+      }
+    ],
+    "email": [
+      {
+        "regex_pattern": "e.?mail|google\\s+account|g?mail|icloud",
+        "attributes": [
+          "name",
+          "type",
+          "id",
+          "autocomplete",
+          "autocompletetype"
+        ]
+      }
+    ],
+    "phoneNumber": [
+      {
+        "regex_pattern": "phone|mobile|contact.?number|tel",
+        "attributes": [
+          "name",
+          "id",
+          "autocomplete",
+          "autocompletetype"
+        ]
+      }
+    ],
+    "cardholderName": [
+      {
+        "regex_pattern": "^cc-name$",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "(card|cc).?(?:holder|owner)|name.*(\\b)?on(\\b)?.*card",
+        "attributes": [
+          "name",
+          "id"
+        ]
+      }
+    ],
+    "cardNumber": [
+      {
+        "regex_pattern": "^cc-number$",
+        "attributes": [
+          "autocomplete",
+          "autocompletetype"
+        ]
+      },
+      {
+        "regex_pattern": "(add)?(?:card|cc|acct).?(?:number|#|no|field)|carn|credit.*?card.*?cnb",
+        "attributes": [
+          "name",
+          "type",
+          "id"
+        ]
+      }
+    ],
+    "cardType": [
+      {
+        "regex_pattern": "(credit)?(card.*|cc_)type",
+        "attributes": [
+          "name",
+          "type",
+          "id",
+          "autocomplete",
+          "autocompletetype"
+        ]
+      }
+    ],
+    "expiryMonth": [
+      {
+        "regex_pattern": "^cc-exp-month$",
+        "attributes": [
+          "autocomplete",
+          "autocompletetype"
+        ]
+      },
+      {
+        "regex_pattern": "exp.*mo|ccmonth|card.?month|addmonth",
+        "attributes": [
+          "name",
+          "type",
+          "id",
+          "autocomplete",
+          "autocompletetype"
+        ]
+      }
+    ],
+    "expiryYear": [
+      {
+        "regex_pattern": "(?:exp|payment|card).*(?:year|yr)",
+        "attributes": [
+          "name",
+          "type",
+          "id",
+          "autocomplete",
+          "autocompletetype"
+        ]
+      }
+    ],
+    "expiryDate": [
+      {
+        "regex_pattern": "^cc-exp$",
+        "attributes": [
+          "autocomplete"
+        ]
+      }
+    ],
+    "cvv": [
+      {
+        "regex_pattern": "cc-csc",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "verification|card.?identification|security.?code|card.?code|security.?value|security.?number|card.?pin|c-v-v|(cvn|cvv|cvc|csc|cvd|cid|ccv)(field)?|\\bcid\\b",
+        "attributes": [
+          "name",
+          "type",
+          "id"
+        ]
+      }
+    ],
+    "password": [
+      {
+        "regex_pattern": "^password$|^Password$|pwd",
+        "attributes": [
+          "name",
+          "type",
+          "id"
+        ]
+      }
+    ],
+    "fullBirthday": [
+      {
+        "regex_pattern": "^bday$",
+        "attributes": [
+          "autocomplete"
+        ]
+      },
+      {
+        "regex_pattern": "^birthday$|^Birthday$|^birth-day$",
+        "attributes": [
+          "name",
+          "id"
+        ]
+      }
+    ],
+    "birthdayDay": [
+      {
+        "regex_pattern": "^bday-day$",
+        "attributes": [
+          "autocomplete"
+        ]
+      }
+    ],
+    "birthdayMonth": [
+      {
+        "regex_pattern": "^bday-month$",
+        "attributes": [
+          "autocomplete"
+        ]
+      }
+    ],
+    "birthdayYear": [
+      {
+        "regex_pattern": "^bday-year$",
+        "attributes": [
+          "autocomplete"
+        ]
+      }
+    ]
+  },
+  "footlocker": {
+    "address": [
+      {
+        "regex_pattern": "^line1$",
+        "attributes": [
+          "name"
+        ]
+      }
+    ]
+  },
+  "polarcop": {
+    "firstName": [
+      {
+        "regex_pattern": "^purchase[bfn]$",
+        "attributes": [
+          "name"
+        ]
+      }
+    ],
+    "lastName": [
+      {
+        "regex_pattern": "^purchase[bln]$",
+        "attributes": [
+          "name"
+        ]
+      }
+    ],
+    "address": [
+      {
+        "regex_pattern": "^purchase[address]$",
+        "attributes": [
+          "name"
+        ]
+      }
+    ],
+    "country": [
+      {
+        "regex_pattern": "^purchase[country]$",
+        "attributes": [
+          "name"
+        ]
+      }
+    ],
+    "zipcode": [
+      {
+        "regex_pattern": "^purchase[postalcode]$",
+        "attributes": [
+          "name"
+        ]
+      }
+    ]
+  }
+}

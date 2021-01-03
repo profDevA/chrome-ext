@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AutoFill</title>
+</head>
+
+<link rel="stylesheet" href="/css/autofill.css">
+
+<body>
+
+    <ul id="nav-tab" class="nav">
+        <li class="active"><a href="#Profiles">Profiles</a></li>
+        <li><a href="#Settings">Settings</a></li>
+    </ul>
+
+    <div class="tab-pane active" id="Profiles">
+        <div id="billing-div">
+            <input id="profile_name" placeholder="Profile Name"></input>
+            <input id="first_name" placeholder="First Name"></input>
+            <input id="last_name" placeholder="Last Name"></input>
+
+            <input id="email" placeholder="Email"></input>
+
+            <input id="phone" placeholder="Phone Number"></input>
+
+            <input id="address1" placeholder="Address 1"></input>
+
+            <input id="address2" placeholder="Address 2"></input>
+
+            <input id="city" placeholder="City"></input>
+
+            <input id="zip" placeholder="Zip Code"></input>
+
+            <input id="state" placeholder="State/Province (no abbreviation)"></input>
+
+            <input id="country" placeholder="Country/region (no abbreviation)"></input>
+
+            <input id="username" placeholder="Username"></input>
+
+            <input id="password" placeholder="Password"></input>
+
+            <input id="discord" placeholder="Discord Username"></input>
+
+            <input id="cardName" placeholder="Card Holder Name"></input>
+
+            <select id="cardType">
+                <option value="" selected disabled hidden>Card Type</option>
+                <option value="visa">Visa</option>
+                <option value="american_express">American Express</option>
+                <option value="master">Mastercard</option>
+                <option value="solo">Solo</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <input id="num" placeholder="Card Number"></input>
+
+            <select id="expM">
+                <option value="" selected disabled hidden>MM</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select id="expY">
+                <option value="" selected disabled hidden>YY</option>
+                <option value="2020">20</option>
+                <option value="2021">21</option>
+                <option value="2022">22</option>
+                <option value="2023">23</option>
+                <option value="2024">24</option>
+                <option value="2025">25</option>
+                <option value="2026">26</option>
+                <option value="2027">27</option>
+                <option value="2028">28</option>
+                <option value="2029">29</option>
+                <option value="2030">30</option>
+                <option value="2031">31</option>
+            </select>
+            <input id="CVV" placeholder="CVV"></input>
+            <button id="deleteProfile">Delete</button>
+            <button id="saveProfile">Save</button>
+
+            <select id="load-profiles">
+                <option value="" selected disabled hidden>Load Profile</option>
+            </select>
+
+            <input type="file" id="importProfile" accept=".json" style="display:none" />
+            <button id="importProfileBtn" class="portBtn">Import</button>
+            <button id="exportProfileBtn" class="portBtn">Export</button>
+
+
+        </div>
+
+        <div id="rotations-div">
+            <div id="inputs_div">
+                <select id="profile-select">
+                    <option value="" selected disabled hidden>Profiles</option>
+                </select>
+
+                <input type="number" id="profile-uses" min="1" placeholder="Uses"></input>
+
+                <button id="profile-add">Add</button>
+            </div>
+
+            <table id="profiles-table">
+                <thead>
+                    <th>Index</th>
+                    <th>Profile Name</th>
+                    <th>Uses</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="tab-pane" id="Settings">
+
+        <div id="settings-div">
+            <div id="general" class="settings-div">
+                <label id="general-label" class="settings-div-label">General</label>
+
+
+                <label id="enable-switch" class="switch">
+                    <input id="enable-checkbox" type="checkbox">
+                    <span id="enable-slider" class="slider"></span>
+                </label>
+                <label for="enable-switch" class="label-for-switch">Enable Autofill:</label>
+
+
+                <!--
+                <label id="typing-switch" class="switch">
+                    <input id="typing-checkbox" type="checkbox">
+                    <span id="typing-slider" class="slider"></span>
+                </label>
+                <label for="typing-switch" class="label-for-switch">Enable Typing:</label>
+                -->
+
+            </div>
+            <div id="autoATC" class="settings-div">
+                <label id="autoATC-switch" class="switch">
+                    <input id="autoATC-checkbox" type="checkbox">
+                    <span id="autoATC-slider" class="slider"></span>
+                </label>
+                <label for="autoATC-switch" class="label-for-switch">Enable Auto Add To Cart:</label>
+
+            </div>
+            <div id="random-div" class="settings-div">
+                <label id="random-switch" class="switch">
+                    <input id="random-checkbox" type="checkbox">
+                    <span id="random-slider" class="slider"></span>
+                </label>
+                <label for="random-switch" class="label-for-switch">Enable Random Size (after priority sizes):</label>
+            </div>
+            <div id="autocheckout" class="settings-div">
+                <label id="autocheckout-switch" class="switch">
+                    <input id="autocheckout-checkbox" type="checkbox">
+                    <span id="autocheckout-slider" class="slider"></span>
+                </label>
+                <label for="autocheckout-switch" class="label-for-switch">Enable Auto Checkout:</label>
+            </div>
+            <div id="blackList-div" class="settings-div">
+                <input id="blackList" placeholder="blacklist Sites (Ex: cybersole,kith (keywords))"></input>
+            </div>
+
+            <div>
+                <button id="saveSettings">Save Settings</button>
+            </div>
+        </div>
+
+        <div id="sizes-list-div">
+
+            <div id="size_inputs_div">
+                <select id="size-select">
+                    <option value="" selected disabled hidden>Sizes</option>
+                    <optgroup label="Clothing Sizes">Clothing Sizes</optgroup>
+                    <option value="xxs xxsmall xx-small">XXS</option>
+                    <option value="xs xsmall x-small">XS</option>
+                    <option value="s small">S</option>
+                    <option value="m medium">M</option>
+                    <option value="l large">L</option>
+                    <option value="xl xlarge x-large">XL</option>
+                    <option value="xxl xxlarge xx-large">XXL</option>
+                    <option value="xxxl xxxlarge xxx-large">XXXL</option>
+                    <optgroup label="Pants Sizes">pants</optgroup>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <optgroup label="US Shoe Sizes">US Shoe Sizes</optgroup>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                    <option value="12.5">12.5</option>
+                    <option value="13">13</option>
+                    <option value="13.5">13.5</option>
+                    <option value="14">14</option>
+                    <optgroup label="EU Shoe Sizes">EU Shoe Sizes</optgroup>
+                    <option value="36">36</option>
+                    <option value="36.5">36.5</option>
+                    <option value="37.5">37.5</option>
+                    <option value="38">38</option>
+                    <option value="38.5">38.5</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="40.5">40.5</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="42.5">42.5</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="44.5">44.5</option>
+                    <option value="45">45</option>
+                    <option value="45.5">45.5</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                    <option value="47.5">47.5</option>
+                    <option value="48">48</option>
+                    <option value="48.5">48.5</option>
+                </select>
+
+                <button id="size-add">Add</button>
+            </div>
+
+            <table id="sizes-table">
+                <thead>
+                    <th>Index</th>
+                    <th>Size</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/autofill.js"></script>
+</body>
+
+</html>

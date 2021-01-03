@@ -1,0 +1,251 @@
+[class~="childDiv"] {
+    height: 7%;
+}
+#COG-monitor-div,
+[class~="childDiv"],
+#cancelBtn,
+#COG-quickTaskBtn {
+    color: white;
+}
+#COG-monitor-div,
+[class~="childDiv"],
+#COG-quickTaskBtn {
+    text-align: center;
+}
+#COG-quickTaskBtn {
+    height: 8%;
+}
+#COG-quickTaskBtn {
+    width: 15%;
+}
+[class~="childDiv"],
+#COG-quickTaskBtn {
+    background-color: #1a1c1e;
+}
+#COG-quickTaskBtn {
+    left: 50%;
+}
+#COG-quickTaskBtn {
+    left: 85%;
+}
+[class~="childDiv"] {
+    padding-top: 30%;
+}
+#COG-quickTaskBtn {
+    border-radius: 5px;
+}
+[class~="childDiv"] {
+    margin-bottom: 5%;
+}
+#COG-quickTaskBtn {
+    font-size: 9pt;
+}
+#COG-quickTaskBtn {
+    position: absolute;
+}
+#COG-quickTaskBtn {
+    top: 15%;
+}
+#COG-quickTaskBtn {
+    transform: translate(-50%, -50%);
+}
+#taskImg {
+    height: 22.5pt;
+}
+#taskImg {
+    width: 0.3125in;
+}
+#taskImg {
+    display: inline-block;
+}
+#cancelBtn,
+.modalInput,
+#createBtn {
+    margin-top: 5%;
+}
+[class~="childDiv"] {
+    overflow: hidden;
+}
+.modalInput,
+#cancelBtn,
+#createBtn {
+    margin-left: 10%;
+}
+#cancelBtn,
+#createBtn,
+.modalInput {
+    height: 11%;
+}
+#createBtn,
+#cancelBtn {
+    width: 32.5%;
+}
+[class~="childDiv"] {
+    text-overflow: ellipsis;
+}
+[class~="childDiv"] {
+    white-space: nowrap;
+}
+.modalInput,
+#cancelBtn {
+    border-left-width: medium;
+}
+[class~="childDiv"] {
+    max-width: 250px;
+}
+.modalInput,
+#cancelBtn {
+    border-bottom-width: medium;
+}
+.modalInput,
+#cancelBtn {
+    border-right-width: medium;
+}
+.modalInput,
+#cancelBtn {
+    border-top-width: medium;
+}
+#cancelBtn,
+.modalInput {
+    border-left-style: none;
+}
+#cancelBtn,
+.modalInput {
+    border-bottom-style: none;
+}
+.modalInput,
+#cancelBtn {
+    border-right-style: none;
+}
+.modalInput,
+#cancelBtn {
+    border-top-style: none;
+}
+.modalInput,
+#cancelBtn {
+    border-left-color: currentColor;
+}
+#cancelBtn,
+.modalInput {
+    border-bottom-color: currentColor;
+}
+.modalInput,
+#cancelBtn {
+    border-right-color: currentColor;
+}
+#cancelBtn,
+.modalInput {
+    border-top-color: currentColor;
+}
+.modalInput,
+#cancelBtn {
+    border-image: none;
+}
+#createBtn,
+#cancelBtn {
+    background-color: #536cc0;
+}
+#cancelBtn,
+.modalInput,
+#createBtn {
+    border-radius: 7px;
+}
+.modalInput {
+    width: 30%;
+}
+.modalInput {
+    background-color: #16192a;
+}
+.modalInput {
+    color: #536cc0;
+}
+.modalInput {
+    padding-left: 0.104166667in;
+}
+#createBtn {
+    color: white;
+}
+#createBtn {
+    border-left-width: medium;
+}
+#createBtn {
+    border-bottom-width: medium;
+}
+#createBtn {
+    border-right-width: medium;
+}
+#createBtn {
+    border-top-width: medium;
+}
+#createBtn {
+    border-left-style: none;
+}
+#createBtn {
+    border-bottom-style: none;
+}
+#createBtn {
+    border-right-style: none;
+}
+#createBtn {
+    border-top-style: none;
+}
+#createBtn {
+    border-left-color: currentColor;
+}
+#createBtn {
+    border-bottom-color: currentColor;
+}
+#createBtn {
+    border-right-color: currentColor;
+}
+#createBtn {
+    border-top-color: currentColor;
+}
+#createBtn {
+    border-image: none;
+}
+#modal_content {
+    background-color: #202339;
+}
+#modal_content {
+    height: 40%;
+}
+.modal {
+    display: block;
+}
+#modal_content {
+    width: 40%;
+}
+#modal_content {
+    margin-top: 10%;
+}
+#modal_content {
+    margin-left: 30%;
+}
+.modal {
+    position: fixed;
+}
+.modal {
+    z-index: 2;
+}
+.modal {
+    left: 0;
+}
+.modal {
+    top: 0;
+}
+.modal {
+    width: 100%;
+}
+.modal {
+    height: 100%;
+}
+.modal {
+    overflow: auto;
+}
+.modal {
+    background-color: #000;
+}
+.modal {
+    background-color: rgba(0, 0, 0, 0.4);
+}

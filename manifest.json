@@ -1,0 +1,300 @@
+{
+  "manifest_version": 2,
+  "name": "Cooking On Gas extension",
+  "version": "1.3.8",
+  "description": "extension tool built by hypeP",
+  "permissions": [
+    "storage",
+    "notifications"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "browser_action": {
+    "default_popup": "/popup.html"
+  },
+  "icons": {
+    "128": "images/cog-discord-logo-128.png",
+    "400": "images/cog-discord-logo.png"
+  },
+  "background": {
+    "scripts": [
+      "js/bg.js"
+    ],
+    "persistent": true
+  },
+  "web_accessible_resources": [
+    "config/*.json"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://discord.com/*"
+      ],
+      "js": [
+        "js/frontend-monitor.js"
+      ],
+      "css": [
+        "css/frontend-monitor.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "run_at": "document_start",
+      "all_frames": true,
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "globals/config.js",
+        "globals/store.js",
+        "globals/utilities.js",
+        "globals/shoppers.js",
+        "globals/autofiller.js",
+        "globals/success.js",
+        "autofillers/general.js"
+      ]
+    },
+    {
+      "run_at": "document_idle",
+      "all_frames": true,
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://js.stripe.com/*",
+        "https://checkout.stripe.com/*"
+      ],
+      "js": [
+        "autofillers/generic/stripe.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://securev2.global-e.com/payments/CreditCardForm/*"
+      ],
+      "js": [
+        "autofillers/generic/global-e.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://*.adyen.com/checkoutshopper/*"
+      ],
+      "js": [
+        "autofillers/generic/adyen.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://www.paypal.com/*"
+      ],
+      "js": [
+        "shoppers/generic/paypal.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://www.supremenewyork.com/checkout"
+      ],
+      "js": [
+        "autofillers/supreme.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.off---white.com/*"
+      ],
+      "js": [
+        "autofillers/offwhite.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.supremenewyork.com/shop/*",
+        "https://www.supremenewyork.com/checkout"
+      ],
+      "exclude_matches": [
+        "https://www.supremenewyork.com/shop/sizing",
+        "https://www.supremenewyork.com/shop/terms",
+        "https://www.supremenewyork.com/shop/privacy",
+        "https://www.supremenewyork.com/shop/faq"
+      ],
+      "js": [
+        "shoppers/supreme.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://shop.doverstreetmarket.com/*",
+        "https://hps.datacash.com/hps/"
+      ],
+      "js": [
+        "shoppers/dsm.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://www.nakedcph.com/*",
+        "https://live.adyen.com/hpp/*"
+      ],
+      "js": [
+        "shoppers/naked.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.familiaskateshop.com/*"
+      ],
+      "js": [
+        "shoppers/familiaskate.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.footlocker.com/*",
+        "https://www.footlocker.co.uk/*"
+      ],
+      "js": [
+        "shoppers/footlocker.js",
+        "autofillers/footlocker_fill.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.sneakersnstuff.com/*"
+      ],
+      "js": [
+        "shoppers/sns.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://cybersole.io/*"
+      ],
+      "js": [
+        "shoppers/cybersole.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://hawkmesh.com/*"
+      ],
+      "js": [
+        "shoppers/hawkmesh.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.solebox.com/*",
+        "https://www.saferpay.com/*"
+      ],
+      "js": [
+        "autofillers/solebox.js",
+        "shoppers/solebox.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.yeezysupply.com/*"
+      ],
+      "js": [
+        "shoppers/yzsupply.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.ssense.com/*"
+      ],
+      "js": [
+        "shoppers/ssense.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.hibbett.com/*"
+      ],
+      "js": [
+        "shoppers/hibbett.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.zalando.co.uk/*",
+        "https://www.zalando.de/*",
+        "https://www.zalando.es/*",
+        "https://www.zalando.fr/*",
+        "https://www.zalando.it/*",
+        "https://www.zalando.nl/*",
+        "https://www.zalando.no/*"
+      ],
+      "js": [
+        "shoppers/zalando.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://checkout.payment.zalando.com/*"
+      ],
+      "js": [
+        "shoppers/zalando_pay.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://caliroots.com/*"
+      ],
+      "js": [
+        "shoppers/caliroots.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://*/products/*",
+        "https://*/*/checkouts/*"
+      ],
+      "js": [
+        "shoppers/shopify.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://*/*/products/*"
+      ],
+      "js": [
+        "shoppers/shopify2.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}

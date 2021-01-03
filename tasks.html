@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tasks</title>
+</head>
+
+<link rel="stylesheet" href="/css/tasks.css">
+
+<body>
+
+	<div id="backend-div">
+		<div id="create-div" class="div">
+			<input id="chat_url" class="inputs" placeholder="Channel URL"></input>
+			<input id="task_name" class="inputs" placeholder="Task Name"></input>
+			<input id="interval" class="inputs" type="number" min="1" placeholder="Interval (ms)"></input>
+			<input id="url-include" class="inputs" placeholder="URL Include"></input>
+			<input id="url-exclude" class="inputs" placeholder="URL Exclude"></input>
+			<input id="title-include" class="inputs" placeholder="Title Include"></input>
+			<input id="title-exclude" class="inputs" placeholder="Title Exclude"></input>
+			<button id="add_monitor" class="buttons">Add Monitor</button>
+
+		</div>
+		<div id="options-div">
+			<input type="file" id="importTask" accept=".json" style="display:none" />
+			<button id="importTasksBtn" class="taskPortBtn">Import</button>
+			<button id="exportTasksBtn" class="taskPortBtn">Export</button>
+			<button id="open_all">Open All Tasks</button>
+		</div>
+		<div id="monitor-div" class="div">
+			<div id="table-div">
+				<table id="monitors_table">
+					<thead>
+						<tr>
+							<th>Task Name</th>
+							<th>Channel URL</th>
+							<th>URL Keywords</th>
+							<th>Title Keywords</th>
+							<th>Interval</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/discordDash.min.js"></script>
+	<script src="/js/tasks.js"></script>
+</body>
+
+</html>

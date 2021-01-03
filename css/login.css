@@ -1,0 +1,240 @@
+[class~="bg"] {
+    background-position: center;
+}
+[class~="bg"] {
+    background-size: cover;
+}
+#logo-img {
+    height: 0.416666667in;
+}
+#logo-img {
+    width: 30pt;
+}
+#logo-img,
+#btn-login,
+label[for="bg"],
+.middle,
+label[for="login-token"],
+.login-input {
+    position: absolute;
+}
+[class~="bg"] {
+    height: 225pt;
+}
+[class~="login-input"]:focus {
+    border-left-width: 0.010416667in;
+}
+[class~="bg"] {
+    width: 125pc;
+}
+.login-input {
+    height: 1.75pc;
+}
+.login-input {
+    width: 1.875in;
+}
+[class~="login-input"]:focus {
+    border-bottom-width: 0.010416667in;
+}
+[class~="login-input"]:focus {
+    border-right-width: 0.010416667in;
+}
+#logo-img {
+    top: 13%;
+}
+#logo-img {
+    left: 60%;
+}
+body {
+    margin-left: 0;
+}
+body {
+    margin-bottom: 0;
+}
+#btn-login,
+label[for="login-token"],
+.login-input,
+label[for="bg"] {
+    left: 10%;
+}
+#login-token {
+    top: 35%;
+}
+body {
+    margin-right: 0;
+}
+[class~="login-input"]:focus {
+    border-top-width: 0.010416667in;
+}
+#btn-login {
+    height: 26.25pt;
+}
+[class~="login-input"]:focus {
+    border-left-style: solid;
+}
+#btn-login,
+label[for="login-token"],
+label[for="bg"] {
+    color: white;
+}
+body {
+    margin-top: 0;
+}
+#btn-login {
+    width: 12.1875pc;
+}
+.login-input {
+    background-color: #16192a;
+}
+#btn-login {
+    top: 55%;
+}
+#btn-login {
+    background-color: #536cc0;
+}
+label[for="login-token"] {
+    font-weight: lighter;
+}
+.login-input,
+#btn-login {
+    border-left-width: medium;
+}
+[class~="login-input"]:focus {
+    border-bottom-style: solid;
+}
+.login-input {
+    color: #536cc0;
+}
+.login-input,
+#btn-login {
+    border-bottom-width: medium;
+}
+.login-input,
+#btn-login {
+    border-right-width: medium;
+}
+body {
+    width: 2.604166667in;
+}
+.login-input,
+#btn-login {
+    border-top-width: medium;
+}
+#btn-login,
+.login-input {
+    border-left-style: none;
+}
+[class~="login-input"]:focus {
+    border-right-style: solid;
+}
+body {
+    height: 280px;
+}
+[class~="login-input"]:focus {
+    border-top-style: solid;
+}
+[class~="login-input"]:focus {
+    border-left-color: #536cc0;
+}
+[class~="login-input"]:focus {
+    border-bottom-color: #536cc0;
+}
+.login-input,
+#btn-login {
+    border-bottom-style: none;
+}
+[class~="login-input"]:focus {
+    border-right-color: #536cc0;
+}
+#btn-login,
+.login-input {
+    border-right-style: none;
+}
+[class~="login-input"]:focus {
+    border-top-color: #536cc0;
+}
+#btn-login,
+.login-input {
+    border-top-style: none;
+}
+[class~="login-input"]:focus {
+    border-image: none;
+}
+#btn-login,
+.login-input {
+    border-left-color: currentColor;
+}
+body {
+    background-color: #202339;
+}
+.login-input,
+#btn-login {
+    border-bottom-color: currentColor;
+}
+.login-input,
+#btn-login {
+    border-right-color: currentColor;
+}
+#btn-login,
+.login-input {
+    border-top-color: currentColor;
+}
+.login-input,
+#btn-login {
+    border-image: none;
+}
+#btn-login {
+    font-size: 9pt;
+}
+#btn-login {
+    border-radius: 1.5625pc;
+}
+#login_msg {
+    font-size: 0.833333333pc;
+}
+#login_msg {
+    left: 15%;
+}
+.login-input {
+    border-radius: 0.9375pc;
+}
+#login_msg {
+    color: grey;
+}
+.login-input {
+    padding-left: 12px;
+}
+* {
+    outline: none;
+}
+label[for="bg"],
+#login_msg {
+    font-weight: lighter;
+}
+.login-input {
+    font-size: 0.666666667pc;
+}
+.middle {
+    top: 80%;
+}
+.middle {
+    left: 50%;
+}
+label[for="bg"] {
+    top: 15%;
+}
+.middle {
+    width: 150pt;
+}
+.middle {
+    transform: translate(-50%, -50%);
+}
+.middle {
+    text-align: center;
+}
+label[for="bg"] {
+    left: 17%;
+}
+label[for="bg"] {
+    font-size: 21.333333333px;
+}
