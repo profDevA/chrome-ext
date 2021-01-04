@@ -1,3 +1,4 @@
+/* 
 [class~="bg"] {
     background-position: center;
 }
@@ -237,4 +238,107 @@ label[for="bg"] {
 }
 label[for="bg"] {
     font-size: 21.333333333px;
+}
+
+ */
+
+ body {
+     width: 800px;
+     height: 600px;
+     background-color: #202338;
+     margin: 0;
+     color: #fff;
+     overflow: hidden;
+     font-size: 14px;
+ }
+
+ input {
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #fff;
+ }
+
+ button, .btn {
+     background-color: #546BC1;
+     text-align: center;
+     padding-top: .5rem;
+     padding-bottom: .5rem;
+     border: none;
+     outline: none;
+     color: #fff;
+ }
+
+ a, a:hover, a:active {
+     color: #fff;
+ }
+
+ #login {
+     display: flex;
+     justify-content: baseline;
+     align-items: center;
+     height: 100%;
+ }
+
+ #login .login-image {
+     width: 45%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #login .login-image img {
+    width: 70%;
+ }
+
+ #login .login-right {
+    width: 55%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.login-right .login-right__content {
+    width: 280px;
+    margin: 0 auto;
+    
+}
+
+.login-right .welcome-image img {
+    width: 95px;
+}
+
+.login-right .welcome-message {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.login-right .login-form input {
+    display: block;
+    height: 46px;
+    border-radius: 23px;
+    width: 100%;
+    background-color: #191B29;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.login-right .login-form button {
+    display: block;
+    height: 46px;
+    border-radius: 23px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.login-right .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 14px;
+    display: flex;
+    justify-content: space-evenly;
 }

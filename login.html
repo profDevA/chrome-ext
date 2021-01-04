@@ -5,24 +5,38 @@
 	<title>Login</title>
 </head>
 
-<link rel="stylesheet" href="/css/login.css">
+<link rel="stylesheet" href="/css/style.css">
 
 <body>
-
-	<p>hello</p>
-	<a href="test.html">test link</a>
-
-	<label for="bg">User Login</label>
-	<img id="logo-img" src="/images/cog-discord-logo.png"></img>
-	<input type="text" class="login-input" id="login-token" placeholder="Key"></input>
-	<button id="btn-login">Login</button>
-
-	<div class="middle">
-		<p id="login_msg"></p>
+	<div id="login">
+		<div class="login-image">
+			<img src="images/login-image.png" alt="" class="">
+		</div>
+		<div class="login-right">
+			<div class="login-right__content">
+				<div class="welcome-image">
+					<img src="images/welcome-image.png" alt="">
+				</div>
+				<h1 class="welcome-message">Welcome To Cooking On Gas</h1>
+				<div class="login-form">
+					<input type="text" class="login-input" id="login-token" placeholder="Enter Your Licence Key"></input>
+					<button id="btn-login">Login</button>
+				</div>
+				<div class="middle">
+					<p id="login_msg"></p>
+				</div>
+			</div>
+			<div class="footer">
+				<span>Version 1.1.2</span>
+				<a href="#" class="footer-link">Documentation</a>
+				<a href="#" class="footer-link">Twitter</a>
+				<a href="#" class="footer-link">Dashboard</a>
+			</div>
+		</div>
 	</div>
+
 	<script src="js/discordDash.min.js"></script>
 	<script src="js/login.js"></script>
-
 </body>
 
 </html>
