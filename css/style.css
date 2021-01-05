@@ -305,7 +305,7 @@ a:active {
     flex-direction: column;
 }
 
-#profiles .page-content input, select {
+.page-content input, select {
     border: none;
     outline: none;
     color: #fff;
@@ -316,7 +316,7 @@ a:active {
     padding: 0;
 }
 
-#profiles .page-content select {
+.page-content select {
     text-align: center;
     text-align-last: center;
 }
@@ -398,5 +398,93 @@ a:active {
 }
 
 .profiles table td .no-profile {
+    font-size: 24px;
+}
+
+/* Discord Monitors */
+#discord .page-content .content-body {
+    margin-right: 25px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content .discord-form__container {
+    border-radius: 15px;
+    background-color: #191B29;
+    border: 1px solid #5367BC;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+#discord .page-content .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#discord .page-content .form-control {
+    width: 236px;
+    height: 32px;
+}
+
+#discord .page-content .form-group > * {
+    display: block;
+}
+
+#discord .page-content .form-group label {
+    font-size: 12px;
+}
+
+#discord .page-content .form-group label .question-mark {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    font-size: 11px;
+}
+
+#discord .page-content .create-monitor {
+    border-radius: 10px;
+    margin-top: 14px;
+}
+
+#discord .monitors {
+    background-color: #191b29;
+    border: 1px solid #5367bc;
+    border-radius: 15px;
+    flex: 1;
+    margin-bottom: 6px;
+}
+
+.monitors > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px 0;
+    text-align: center;
+}
+
+.monitors > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.monitors table th {
+    font-size: 20px;
+    background-color: #212437;
+    line-height: 1.8;
+}
+
+.monitors table td {
+    text-align: center;
+}
+
+.monitors table td .no-profile-img {
+    width: 64px;
+    margin-top: 10px;
+}
+
+.monitors table td .no-profile {
     font-size: 24px;
 }
