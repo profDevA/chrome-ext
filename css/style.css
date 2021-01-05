@@ -212,10 +212,10 @@ a:active {
 }
 
 .page .page-content {
-    width: 630px;
     display: flex;
     flex-direction: column;
     padding: 0 15px 16px;
+    flex: 1;
 }
 
 .page-content .header .page-title {
@@ -313,6 +313,7 @@ a:active {
     height: 25px;
     border-radius: 10px;
     margin-bottom: 9px;
+    padding: 0;
 }
 
 #profiles .page-content select {
@@ -330,7 +331,7 @@ a:active {
 
 .divider {
     border-bottom: 1px solid #546BC0;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 #profiles .page-content .row {
@@ -353,7 +354,7 @@ a:active {
 
 #profiles .page-content .last-row.justify-start > * {
     margin-bottom: 0;
-    margin-right: 30px;
+    margin-right: 14px;
 }
 
 #profiles .page-content .last-row .create-profile {
@@ -369,3 +370,33 @@ a:active {
     margin-bottom: 6px;
 }
 
+.profiles > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px 0;
+    text-align: center;
+}
+
+.profiles > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profiles table th {
+    font-size: 20px;
+    background-color: #212437;
+    line-height: 1.8;
+}
+
+.profiles table td {
+    text-align: center;
+}
+
+.profiles table td .no-profile-img {
+    width: 64px;
+    margin-top: 10px;
+}
+
+.profiles table td .no-profile {
+    font-size: 24px;
+}
