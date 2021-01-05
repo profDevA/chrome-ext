@@ -5,10 +5,10 @@
 	<title>Home</title>
 </head>
 
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="css/style.css">
 
 <body>
-	<div id="home" class="page">
+	<div id="profiles" class="page">
 		<div class="sidebar">
 			<div class="logo">
 				<img src="images/cog-discord-logo.png" alt="Cog Discord Logo">
@@ -49,11 +49,92 @@
 			<div class="content-body">
 				<div class="profile-form__container">
 					<from id="createProfile">
-						
+						<div class="row">
+							<input type="text" class="wide" placeholder="Profile Name">
+							<input type="text" class="narrow" placeholder="First Name">
+							<input type="text" class="narrow" placeholder="Last Name">
+						</div>
+						<div class="row">
+							<input type="email" class="wide" placeholder="Email">
+							<input type="text" class="narrow" placeholder="Phone">
+							<select name="numberOfUses" id="" class="narrow">
+								<option value="">Number Of Uses</option>
+								<option value="">Number Of Uses</option>
+								<option value="">Number Of Uses</option>
+								<option value="">Number Of Uses</option>
+							</select>
+						</div>
+						<div class="divider"></div>
+
+						<div class="row">
+							<input type="text" class="wide" placeholder="Address 1">
+							<input type="text" class="narrow" placeholder="Address 2">
+							<input type="text" class="narrow" placeholder="Country">
+						</div>
+						<div class="row">
+							<input type="text" class="wide" placeholder="City">
+							<input type="text" class="narrow" placeholder="State">
+							<input type="text" class="narrow" placeholder="Zip">
+						</div>
+						<div class="divider"></div>
+						<div class="row ">
+							<select name="" id="" class="narrow card__type">
+								<option value="">Card Type</option>
+								<option value="">Card Type</option>
+								<option value="">Card Type</option>
+								<option value="">Card Type</option>
+							</select>
+							<input type="text" class="card__number" placeholder="Card Number">
+							<input type="text" class="card__holdername" placeholder="Card Holder Name">
+						</div>
+						<div class="row  justify-start">
+							<select name="" id="" class="narrow month">
+								<option value="">MM</option>
+								<option value="">01</option>
+								<option value="">02</option>
+								<option value="">03</option>
+								<option value="">03</option>
+								<option value="">03</option>
+								<option value="">03</option>
+							</select>
+							<select name="" id="" class="narrow year">
+								<option value="">
+									YY
+								</option>
+								<option value="">21</option>
+								<option value="">22</option>
+								<option value="">23</option>
+								<option value="">24</option>
+							</select>
+							<input type="text" class="narrow zip" placeholder="Zip">
+						</div>
+						<div class="divider"></div>
+						<div class="row justify-start last-row">
+							<button class="btn create-profile">Create Profile</button>
+							<input type="text" class="email-password" placeholder="Email:Password">
+							<input type="text" class="discord-username" placeholder="Discord Username">
+						</div>
 					</from>
 				</div>
 				<div class="profiles">
-
+					<p>Current Profiles & Profile Rotation</p>
+					<table class="table-profiles">
+						<thead>
+							<tr>
+								<th>Order</th>
+								<th>Profile Name</th>
+								<th>Number Of Uses</th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									you have no profiles created yet
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 			<div class="footer">
@@ -64,14 +145,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- <button id="logout">Log outtt</button> -->
-	
-	<button id="tasksBtn" class="popupBtn" style="display: none;">Monitors</button>
-	<button id="autofillBtn" class="popupBtn" style="display: none;">Autofill</button>
-	<button id="resetAutofill" class="popupBtn" style="display: none;">Reset w/ Autofill</button>
-	<button id="resetAll" class="popupBtn" style="display: none;">Reset All</button>
-	<script src="js/discordDash.min.js"></script>
-	<script src="js/popup.js"></script>
+
 </body>
 
 </html>

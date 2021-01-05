@@ -15,6 +15,11 @@ input {
     color: #fff;
 }
 
+input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
 button,
 .btn {
     background-color: #546bc1;
@@ -30,6 +35,42 @@ a,
 a:hover,
 a:active {
     color: #fff;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.justify-center {
+    justify-content: center !important;
+}
+
+.justify-start {
+    justify-content: flex-start !important;
+}
+
+.justify-end {
+    justify-content: flex-end !important;
+}
+
+.justify-between {
+    justify-content: space-between !important;
+}
+
+.justify-around {
+    justify-content: space-around !important;
+}
+
+.justify-evenly {
+    justify-content: space-evenly !important;
+}
+
+.items-center {
+    align-items: center !important;
 }
 
 #login {
@@ -253,8 +294,78 @@ a:active {
     border-radius: 15px;
     background-color: #191B29;
     border: 1px solid #5367BC;
-    padding: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
 }
 
+#profiles .page-content .content-body {
+    margin-right: 25px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
 
+#profiles .page-content input, select {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #212437;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 9px;
+}
+
+#profiles .page-content select {
+    text-align: center;
+    text-align-last: center;
+}
+
+#profiles .page-content .wide {
+    width: 235px;
+}
+
+#profiles .page-content .narrow {
+    width: 143px;
+}
+
+.divider {
+    border-bottom: 1px solid #546BC0;
+    margin-bottom: 12px;
+}
+
+#profiles .page-content .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profiles .page-content .row .card__number {
+    width: 212px;
+}
+
+#profiles .page-content .row .card__holdername {
+    width: 168px;
+}
+
+#profiles .page-content .justify-start > * {
+    margin-right: 10px;
+}
+
+#profiles .page-content .last-row.justify-start > * {
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+#profiles .page-content .last-row .create-profile {
+    width: 150px;
+    border-radius: 16px;
+}
+
+#profiles .profiles {
+    background-color: #191b29;
+    border: 1px solid #5367bc;
+    border-radius: 15px;
+    flex: 1;
+    margin-bottom: 6px;
+}
 
