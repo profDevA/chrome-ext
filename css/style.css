@@ -153,7 +153,7 @@ a:active {
 
 .page .sidebar {
     width: 170px;
-    background-color: #191B29;
+    background-color: #191b29;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -175,7 +175,6 @@ a:active {
     justify-content: space-between;
 }
 
-
 .page .sidebar .sidebar__menu .menu--item {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -189,7 +188,7 @@ a:active {
 }
 
 .page .sidebar .sidebar__menu .menu--item.active {
-    background-color: #5368BC;
+    background-color: #5368bc;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -207,8 +206,8 @@ a:active {
     margin-bottom: 14px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: .3rem;
-    padding-bottom: .3rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
 }
 
 .page .page-content {
@@ -242,11 +241,11 @@ a:active {
 /* Home */
 .page-content .introbox {
     height: 150px;
-    background-color: #191B29;
+    background-color: #191b29;
     border-radius: 30px;
     margin-bottom: 18px;
     display: flex;
-    border: 1px solid #556BC1;
+    border: 1px solid #556bc1;
 }
 
 .page-content .introbox .introbox__image {
@@ -265,7 +264,7 @@ a:active {
 }
 
 .page-content .introbox .introbox__textbox .view-doc {
-    background-color: #546BC1;
+    background-color: #546bc1;
     height: 38px;
     border-radius: 19px;
     font-size: 20px;
@@ -292,8 +291,8 @@ a:active {
 /* Profiles */
 .page-content .profile-form__container {
     border-radius: 15px;
-    background-color: #191B29;
-    border: 1px solid #5367BC;
+    background-color: #191b29;
+    border: 1px solid #5367bc;
     padding: 12px;
     margin-bottom: 10px;
 }
@@ -305,7 +304,8 @@ a:active {
     flex-direction: column;
 }
 
-.page-content input, select {
+.page-content input,
+select {
     border: none;
     outline: none;
     color: #fff;
@@ -316,10 +316,63 @@ a:active {
     padding: 0;
 }
 
+.page-content .select-wrapper {
+    background-color: #212437;
+    border-radius: 10px;
+    padding: 0 2px;
+    margin-bottom: 9px;
+}
+
+.page-content .select-wrapper select {
+    margin-bottom: 0;
+}
+
 .page-content select {
     text-align: center;
     text-align-last: center;
 }
+
+#profiles .page-content .header {
+    position: relative;
+}
+
+#profiles .page-content .header .page-title {
+    margin-left: -30px;
+}
+
+#profiles .page-content .header .load-profile {
+    position: absolute;
+    right: 43px;
+    top: 6px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#profiles .page-content .header .load-profile .select-wrapper {
+    margin-bottom: 0;
+    background-color: #191B29;
+    border: 1px solid #546BC0;
+    margin-right: 5px;
+}
+
+#profiles .page-content .header .load-profile select {
+    width: 136px;
+    background-color: #191b29;
+}
+
+#profiles .page-content .header .load-profile button {
+    background: none;
+    padding: 0;
+}
+
+#profiles .page-content .header .load-profile button svg {
+    height: 27px;
+    width: 27px;
+    fill: #fff;
+    margin-left: 10px;
+}
+
 
 #profiles .page-content .wide {
     width: 235px;
@@ -329,8 +382,12 @@ a:active {
     width: 143px;
 }
 
+#profiles .page-content .select-wrapper .narrow {
+    width: 139px;
+}
+
 .divider {
-    border-bottom: 1px solid #546BC0;
+    border-bottom: 1px solid #546bc0;
     margin-bottom: 15px;
 }
 
@@ -411,10 +468,39 @@ a:active {
 
 .page-content .discord-form__container {
     border-radius: 15px;
-    background-color: #191B29;
-    border: 1px solid #5367BC;
+    background-color: #191b29;
+    border: 1px solid #5367bc;
     padding: 12px;
     margin-bottom: 10px;
+}
+
+#discord .page-content .header {
+    position: relative;
+}
+
+#discord .page-content .header .page-title {
+    /* margin-left: -30px; */
+}
+
+#discord .page-content .header .load-monitor {
+    position: absolute;
+    right: 43px;
+    top: 6px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#discord .page-content .header .load-monitor button {
+    background: none;
+    padding: 0;
+}
+
+#discord .page-content .header .load-monitor button svg {
+    height: 27px;
+    width: 27px;
+    fill: #fff;
+    margin-left: 10px;
 }
 
 #discord .page-content .row {
@@ -473,7 +559,9 @@ a:active {
 .monitors table th {
     font-size: 20px;
     background-color: #212437;
-    line-height: 1.8;
+    line-height: 1.2;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .monitors table td {
@@ -487,4 +575,205 @@ a:active {
 
 .monitors table td .no-profile {
     font-size: 24px;
+}
+
+/* Settings */
+
+/* switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 27px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #556bc1;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #556bc1;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 27px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* ***** */
+#settings .page-content .content-body {
+    margin-right: 25px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content .settings-form__container {
+    border-radius: 15px;
+    background-color: #191b29;
+    border: 1px solid #5367bc;
+    padding: 12px;
+    margin-bottom: 23px;
+}
+
+#settings .row {
+    display: flex;
+}
+
+#settings .row .checkbox-group {
+    width: 50%;
+    padding-left: 48px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#settings .row .checkbox-group > span {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+#settings .row .form-group.button {
+    padding-left: 48px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#settings .row button {
+    height: 36px;
+    width: 192px;
+    border-radius: 36px;
+    font-size: 20px;
+}
+
+#settings .row .form-group.input {
+    flex: 1;
+    padding: 0 8px;
+}
+
+#settings .row .form-group.input > * {
+    display: block;
+}
+
+#settings .row .input label {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+#settings .row .input .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    margin-bottom: 0;
+}
+
+#settings .sizes {
+    background-color: #191b29;
+    border: 1px solid #5367bc;
+    border-radius: 15px;
+    flex: 1;
+    margin-bottom: 6px;
+}
+
+.sizes > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px 0;
+    text-align: center;
+}
+
+.sizes > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sizes table th {
+    font-size: 20px;
+    background-color: #212437;
+    line-height: 1.8;
+}
+
+.sizes table td {
+    text-align: center;
+}
+
+.sizes table td .no-profile-img {
+    width: 64px;
+    margin-top: 10px;
+}
+
+.sizes table td .no-profile {
+    font-size: 24px;
+}
+
+.sizes .select-add-size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sizes .select-add-size .select-size {
+    background-color: #191B29;
+    border-radius: 10px;
+    border: 1px solid #546BC0;
+    padding: 0 2px;
+    margin-right: 20px;
+}
+
+
+.sizes .select-add-size select {
+    margin-bottom: 0;
+    height: 27px;
+    background-color: #191B29;
+    width: 133px;
+}
+
+.sizes .select-add-size .add-size button {
+    height: 29px;
+    width: 149px;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 0;
 }

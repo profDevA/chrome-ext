@@ -45,7 +45,22 @@
 		<div class="page-content">
 			<div class="header">
 				<p class="page-title">Profiles</p>
-				<!-- <button class="btn load-profile">Load Profile</button> -->
+				<div class="load-profile">
+					<div class="select-wrapper">
+						<select name="" id="">
+							<option>Load Profile</option>
+							<option>Load </option>
+							<option>Load 2</option>
+							<option>Load Profile</option>
+						</select>
+					</div>
+					<button class="export">
+						<svg height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="Solid"><path d="m239.029 384.97a24 24 0 0 0 33.942 0l90.509-90.509a24 24 0 0 0 0-33.941 24 24 0 0 0 -33.941 0l-49.539 49.539v-262.059a24 24 0 0 0 -48 0v262.059l-49.539-49.539a24 24 0 0 0 -33.941 0 24 24 0 0 0 0 33.941z"/><path d="m464 232a24 24 0 0 0 -24 24v184h-368v-184a24 24 0 0 0 -48 0v192a40 40 0 0 0 40 40h384a40 40 0 0 0 40-40v-192a24 24 0 0 0 -24-24z"/></g></svg>
+					</button>
+					<button class="import">
+						<svg height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="Solid"><path d="m182.461 155.48 49.539-49.539v262.059a24 24 0 0 0 48 0v-262.059l49.539 49.539a24 24 0 1 0 33.941-33.941l-90.509-90.51a24 24 0 0 0 -33.942 0l-90.509 90.51a24 24 0 1 0 33.941 33.941z"/><path d="m464 232a24 24 0 0 0 -24 24v184h-368v-184a24 24 0 0 0 -48 0v192a40 40 0 0 0 40 40h384a40 40 0 0 0 40-40v-192a24 24 0 0 0 -24-24z"/></g></svg>
+					</button>
+				</div>
 			</div>
 			<div class="content-body">
 				<div class="profile-form__container">
@@ -58,12 +73,14 @@
 						<div class="row">
 							<input type="email" class="wide" placeholder="Email">
 							<input type="text" class="narrow" placeholder="Phone">
-							<select name="numberOfUses" id="" class="narrow">
-								<option value="">Number Of Uses</option>
-								<option value="">Number Of Uses</option>
-								<option value="">Number Of Uses</option>
-								<option value="">Number Of Uses</option>
-							</select>
+							<div class="select-wrapper">
+								<select name="numberOfUses" id="" class="narrow">
+									<option value="">Number Of Uses</option>
+									<option value="">Number Of Uses</option>
+									<option value="">Number Of Uses</option>
+									<option value="">Number Of Uses</option>
+								</select>
+							</div>
 						</div>
 						<div class="divider"></div>
 
@@ -79,34 +96,40 @@
 						</div>
 						<div class="divider"></div>
 						<div class="row ">
-							<select name="" id="" class="narrow card__type">
-								<option value="">Card Type</option>
-								<option value="">Card Type</option>
-								<option value="">Card Type</option>
-								<option value="">Card Type</option>
-							</select>
+							<div class="select-wrapper">
+								<select name="" id="" class="narrow card__type">
+									<option value="">Card Type</option>
+									<option value="">Card Type</option>
+									<option value="">Card Type</option>
+									<option value="">Card Type</option>
+								</select>
+							</div>
 							<input type="text" class="card__number" placeholder="Card Number">
 							<input type="text" class="card__holdername" placeholder="Card Holder Name">
 						</div>
 						<div class="row  justify-start">
-							<select name="" id="" class="narrow month">
-								<option value="">MM</option>
-								<option value="">01</option>
-								<option value="">02</option>
-								<option value="">03</option>
-								<option value="">03</option>
-								<option value="">03</option>
-								<option value="">03</option>
-							</select>
-							<select name="" id="" class="narrow year">
-								<option value="">
-									YY
-								</option>
-								<option value="">21</option>
-								<option value="">22</option>
-								<option value="">23</option>
-								<option value="">24</option>
-							</select>
+							<div class="select-wrapper">
+								<select name="" id="" class="narrow month">
+									<option value="">MM</option>
+									<option value="">01</option>
+									<option value="">02</option>
+									<option value="">03</option>
+									<option value="">03</option>
+									<option value="">03</option>
+									<option value="">03</option>
+								</select>
+							</div>
+							<div class="select-wrapper">
+								<select name="" id="" class="narrow year">
+									<option value="">
+										YY
+									</option>
+									<option value="">21</option>
+									<option value="">22</option>
+									<option value="">23</option>
+									<option value="">24</option>
+								</select>
+							</div>
 							<input type="text" class="narrow zip" placeholder="Zip">
 						</div>
 						<div class="divider"></div>
